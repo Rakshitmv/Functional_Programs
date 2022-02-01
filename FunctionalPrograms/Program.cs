@@ -17,7 +17,7 @@ namespace FunctionalPrograms
                 flag = true;
                 while (flag)
                 {
-                    Console.WriteLine("Enter 1: To enter for two dimensional array\n" +  "Enter 2: To get sum of 3 added integer as zero\n" + "Enter 3: Calculate Distance\n" + "Enter 4: To get Quadratic roots\n" + "Enter 5: To Exit\n");
+                    Console.WriteLine("Enter 1: To enter for two dimensional array\n" +  "Enter 2: To get sum of 3 added integer as zero\n" + "Enter 3: Calculate Distance\n" + "Enter 4: To get Quadratic roots\n" + "Enter 5: To get wind temperature\n" + "Enter 6: To Exit\n");
                     int option = Convert.ToInt32(Console.ReadLine());
                     switch (option)
                     {
@@ -38,6 +38,10 @@ namespace FunctionalPrograms
                             quadraticRoots.Roots();
                             break;
                         case 5:
+                            WindChill windChill = new WindChill();
+                            windChill.Wind();
+                            break;
+                        case 6:
                             flag = false;
                             break;
                         default:

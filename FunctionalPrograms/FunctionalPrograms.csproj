@@ -49,6 +49,7 @@
     <Compile Include="QuadraticRoots.cs" />
     <Compile Include="SumAddsToZero.cs" />
     <Compile Include="TwoDimensionalArray.cs" />
+    <Compile Include="WindChill.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
