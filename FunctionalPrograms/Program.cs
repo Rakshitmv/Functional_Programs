@@ -17,7 +17,7 @@ namespace FunctionalPrograms
                 flag = true;
                 while (flag)
                 {
-                    Console.WriteLine("Enter 1: To enter for two dimensional array\n" +  "Enter 2: To get sum of 3 added integer as zero\n" + "Enter 3: Calculate Distance\n" + "Enter 4: To Exit\n");
+                    Console.WriteLine("Enter 1: To enter for two dimensional array\n" +  "Enter 2: To get sum of 3 added integer as zero\n" + "Enter 3: Calculate Distance\n" + "Enter 4: To get Quadratic roots\n" + "Enter 5: To Exit\n");
                     int option = Convert.ToInt32(Console.ReadLine());
                     switch (option)
                     {
@@ -34,6 +34,10 @@ namespace FunctionalPrograms
                             distance.DistanceCal();
                             break;
                         case 4:
+                            QuadraticRoots quadraticRoots = new QuadraticRoots();
+                            quadraticRoots.Roots();
+                            break;
+                        case 5:
                             flag = false;
                             break;
                         default:
