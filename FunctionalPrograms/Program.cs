@@ -17,7 +17,7 @@ namespace FunctionalPrograms
                 flag = true;
                 while (flag)
                 {
-                    Console.WriteLine("Enter 1: To enter for two dimensional array\n" +  "Enter 2: To get sum of 3 added integer as zero\n" + "Enter 3: To Exit\n");
+                    Console.WriteLine("Enter 1: To enter for two dimensional array\n" +  "Enter 2: To get sum of 3 added integer as zero\n" + "Enter 3: Calculate Distance\n" + "Enter 4: To Exit\n");
                     int option = Convert.ToInt32(Console.ReadLine());
                     switch (option)
                     {
@@ -29,7 +29,11 @@ namespace FunctionalPrograms
                             SumAddsToZero sumAddsToZero = new SumAddsToZero();
                             sumAddsToZero.SumofThreeZero();
                             break;
-                        case 3:
+                        case 3: 
+                            Distance distance = new Distance();
+                            distance.DistanceCal();
+                            break;
+                        case 4:
                             flag = false;
                             break;
                         default:
